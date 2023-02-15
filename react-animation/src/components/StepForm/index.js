@@ -21,7 +21,7 @@ function StepForm(props) {
   };
 
   return (
-    <div className="w-full max-w-sm border border-gray-200 rounded-lg bg-slate-100 p-6  ">
+    <div className="w-full max-w-sm border border-gray-200 rounded-lg bg-white p-6  ">
       <div className="step-group flex justify-between mb-4 ">
         {stepMap.map(i => (
           <Step step={i} key={i} currentStep={currentStep} />

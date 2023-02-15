@@ -44,8 +44,8 @@ function Navigation({ navs }) {
       custom={{ height }}
       ref={ref}
     >
-      <motion.div className="background" variants={sideBar} />
-      <motion.ul className='menu' variants={ulVariant}>
+      <motion.div className="background z-10" variants={sideBar} />
+      <motion.ul className='menu z-20' variants={ulVariant}>
         {(navs || []).map((i, index) => (
           <MenuItem i={i} key={index} index={index} />
         ))}
