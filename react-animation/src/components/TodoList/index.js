@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 const initialTodo = [
   {
@@ -80,7 +80,7 @@ function TodoList(props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+      className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 "
     >
       <div className="flex items-center justify-between mb-4 w-full">
         <div className="flex w-full">
@@ -128,10 +128,10 @@ function TodoList(props) {
                 <div className="flex items-center space-x-4">
                   <div className="flex-shrink-0"></div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    <p className="text-sm font-medium text-gray-900 truncate">
                       {i.name}
                     </p>
-                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                    <p className="text-sm text-gray-500 truncate">
                       {i.note}
                     </p>
                   </div>
